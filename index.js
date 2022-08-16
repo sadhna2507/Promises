@@ -466,39 +466,39 @@
 // im this case after seeing resolve it will get executed only, it will not go to reject ant the reject command will nver ever get executed
      
 
-console.log("entering he user id", 1);
+// console.log("entering he user id", 1);
 
-function getUserData(id){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            let user = {id: id, username: "sadhna"};
-            resolve(user);
-        }, 5000);
-    });
-}
+// function getUserData(id){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let user = {id: id, username: "sadhna"};
+//             resolve(user);
+//         }, 5000);
+//     });
+// }
 
-function getRepositories(userData){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() => {
-            let repos = {
-                'sadhna' : ["add", "calculator", "forms"]
-            }
-        resolve(repos[username]);
-    },3000)
-        });    
-}
+// function getRepositories(userData){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() => {
+//             let repos = {
+//                 'sadhna' : ["add", "calculator", "forms"]
+//             }
+//         resolve(repos[username]);
+//     },3000)
+//         });    
+// }
 
-function getCommits(repos){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() => {
-            let commits = {
-                        add : ['initial commit', 'add function'],
-                        calculator : ['initial', "design", 'addEventListener','give colors'],
-                        forms : ['initial', 'forms UI', 'add functionality']
-                    }
-        resolve(commits[repos]);
-    },2000)
-        });
-}
+// function getCommits(repos){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() => {
+//             let commits = {
+//                         add : ['initial commit', 'add function'],
+//                         calculator : ['initial', "design", 'addEventListener','give colors'],
+//                         forms : ['initial', 'forms UI', 'add functionality']
+//                     }
+//         resolve(commits[repos]);
+//     },2000)
+//         });
+// }
 
-getUserData(1).then((username) => console.log(userData));
+// getUserData(1).then((username) => console.log(userData));
